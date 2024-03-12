@@ -13,7 +13,7 @@ public class ProductService {
     public products saveProduct(products product) {  //to save products...
         return productRepository.save(product);
     }
-    public void deleteProduct(int productId) {  //to delete products.......
+    public void deleteProduct(int productId) {  //to delete products...
         productRepository.deleteById(productId);
     }
 
@@ -21,5 +21,4 @@ public class ProductService {
      public void updateProductRating(int productId, double newRating) {
         productRepository.updateProductRating(productId, newRating);
     }
-
 }
